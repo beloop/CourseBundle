@@ -85,6 +85,11 @@ class BeloopCourseExtension extends AbstractExtension implements EntitiesOverrid
             'beloop.entity.lesson.mapping_file' => $config['mapping']['lesson']['mapping_file'],
             'beloop.entity.lesson.manager' => $config['mapping']['lesson']['manager'],
             'beloop.entity.lesson.enabled' => $config['mapping']['lesson']['enabled'],
+
+            'beloop.entity.external_module.class' => $config['mapping']['external_module']['class'],
+            'beloop.entity.external_module.mapping_file' => $config['mapping']['external_module']['mapping_file'],
+            'beloop.entity.external_module.manager' => $config['mapping']['external_module']['manager'],
+            'beloop.entity.external_module.enabled' => $config['mapping']['external_module']['enabled'],
         ];
     }
 
@@ -120,6 +125,7 @@ class BeloopCourseExtension extends AbstractExtension implements EntitiesOverrid
         return [
             'Beloop\Component\Course\Entity\Interfaces\CourseInterface' => 'beloop.entity.course.class',
             'Beloop\Component\Course\Entity\Interfaces\LessonInterface' => 'beloop.entity.lesson.class',
+            'Beloop\Component\Course\Entity\Interfaces\ExternalModuleInterface' => 'beloop.entity.external_module.class',
         ];
     }
 

@@ -39,6 +39,7 @@ class MappingCompilerPass extends AbstractBeloopMappingCompilerPass
                 [
                     'course',
                     'lesson',
+                    'module',
                 ]
             );
     }
